@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bgcolor" >
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/orange"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_logo" />
+
+        <TextView
+            android:id="@+id/doc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/doc_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/toolbar"
+        android:layout_below="@+id/topbar"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:divider="@color/list_bgcolor"
+        android:dividerHeight="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange" >
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_doc_toolbar_camera" />
+
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_doc_toolbar_gallery" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.websoft.vantium.mobilescanner.camera.CameraPreview
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <com.websoft.vantium.mobilescanner.camera.CalibrateView
+            android:id="@+id/calibrateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <com.websoft.vantium.mobilescanner.camera.SensorView
+            android:id="@+id/sensorView"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:visibility="invisible" />
+
+        <include layout="@layout/layout_camera_zoom" />
+        <include layout="@layout/layout_camera_setting" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="100.0dip"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/layout_camera_shutter" />
+
+        <include layout="@layout/layout_camera_confirm" />
+    </FrameLayout>
+
+</LinearLayout>

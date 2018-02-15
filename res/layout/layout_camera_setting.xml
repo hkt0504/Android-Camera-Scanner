@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_panel"
+    android:layout_width="50.0dip"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:background="#553d3d3d"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/size_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.websoft.vantium.mobilescanner.camera.RotateImageView
+            android:id="@+id/btnSize"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:background="@drawable/btn_dock"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/pic_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rotate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.websoft.vantium.mobilescanner.camera.RotateImageView
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:background="@drawable/btn_dock"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/auto_pic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sprit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.websoft.vantium.mobilescanner.camera.RotateImageView
+            android:id="@+id/btnSwitchSprit"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/btn_dock"
+            android:src="@drawable/btn_ic_spritlevel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sound_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.websoft.vantium.mobilescanner.camera.RotateImageView
+            android:id="@+id/btnSound"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:background="@drawable/btn_dock"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/btn_ic_sound_on" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flash_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.websoft.vantium.mobilescanner.camera.RotateImageView
+            android:id="@+id/btnFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:background="@drawable/btn_dock"
+            android:src="@drawable/btn_ic_flashon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.websoft.vantium.mobilescanner.camera.RotateImageView
+            android:id="@+id/btnSwitchGrid"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/btn_dock"
+            android:src="@drawable/btn_ic_grid" />
+    </LinearLayout>
+
+</LinearLayout>

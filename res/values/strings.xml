@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VantiumMobileScanner</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="doc_title">My Docs</string>
+    <string name="edit_doc">Edit Doc</string>
+    <string name="input_name">Input Name</string>
+
+    <!-- result tab -->
+    <string name="auto">Auto</string>
+    <string name="original">Original</string>
+    <string name="magic">Magic</string>
+    <string name="gray">Gray</string>
+    <string name="light">Light</string>
+    <string name="b_w">B&amp;W</string>
+
+    <!-- page view -->
+    <string name="rotate">Rotate</string>
+    <string name="mark">Mark</string>
+    <string name="recognize">Recognize</string>
+    <string name="share">Share</string>
+    <string name="note">Note</string>
+
+    <string name="mode_auto">Auto mode</string>
+    <string name="mode_original">Original mode</string>
+    <string name="mode_magic">Magic mode</string>
+    <string name="mode_gray">Gray mode</string>
+    <string name="mode_bw">B&amp;M mode</string>
+    <string name="mode_light">Lighten mode</string>
+    
+    <string name="empty"></string>
+
+    <!-- Camera -->
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirm_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <com.websoft.vantium.mobilescanner.camera.RotateImageView
+        android:id="@+id/btnCancel"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40.0dip"
+        android:src="@drawable/ic_capture_confirm_cancel"
+        android:background="@drawable/btn_dock"
+        android:clickable="true"
+        android:scaleType="centerInside" />
+
+    <com.websoft.vantium.mobilescanner.camera.RotateImageView
+        android:id="@+id/btnRetake"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_dock"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_capture_confirm_back" />
+
+    <com.websoft.vantium.mobilescanner.camera.RotateImageView
+        android:id="@+id/btnDone"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40.0dip"
+        android:background="@drawable/btn_dock"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_capture_confirm_ok" />
+
+</RelativeLayout>

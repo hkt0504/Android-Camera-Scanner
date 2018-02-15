@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.websoft.vantium.mobilescanner.widget.CropImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="center"
+            android:src="@drawable/ic_capture_back" />
+
+        <ImageButton
+            android:id="@+id/btnPoint"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="center"
+            android:src="@drawable/ic_maxedge" />
+
+        <ImageButton
+            android:id="@+id/btnToleft"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="center"
+            android:src="@drawable/ic_rotate_left" />
+
+        <ImageButton
+            android:id="@+id/btnToRight"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/empty"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_rotate_right" />
+
+        <ImageButton
+            android:id="@+id/btnOk"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/empty"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_confirm_ok" />
+    </LinearLayout>
+
+</RelativeLayout>

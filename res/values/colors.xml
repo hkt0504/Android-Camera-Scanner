@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="orange">#fffbac1b</color>
+    <color name="red">#f00</color>
+    <color name="yellow">#ff0</color>
+    <color name="filter_bg">#69c3e6</color>
+    <color name="dark_gray">#404040</color>
+    <color name="gray">#808080</color>
+    <color name="client_bgcolor">#69c3e6</color>
+    <color name="light_gray">#c0c0c0</color>
+    <color name="list_bgcolor">#ffe0e0e0</color>
+
+    <!-- theme color -->
+    <color name="holo_common_normal">#00000000</color>
+    <color name="holo_common_pressed">#ff25c4a4</color>
+    <color name="holo_common_long_pressed">#ff1c7f65</color>
+
+</resources>

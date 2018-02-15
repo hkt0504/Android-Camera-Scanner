@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bgcolor" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/empty"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_logo" />
+
+        <TextView
+            android:id="@+id/doc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/doc_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/icon" />
+        
+         <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/btnGallery"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_toobar"
+            android:padding="5dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="center"
+            android:src="@drawable/ic_doc_toolbar_camera" />
+
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_toobar"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="center"
+            android:src="@drawable/ic_doc_toolbar_gallery" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:background="@color/list_bgcolor"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp" />
+
+</RelativeLayout>
